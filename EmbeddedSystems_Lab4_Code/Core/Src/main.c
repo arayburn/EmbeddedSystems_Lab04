@@ -149,10 +149,10 @@ int main(void)
 			if(userinput2 == '0'){ // turn on
 				GPIOC->ODR |= (1<<6);
 			}
-			if(userinput2 == '1'){
+			else if(userinput2 == '1'){
 				GPIOC->ODR &=~ (1<<6); // turn off 
 			}
-			if(userinput2 == '2'){
+			else if(userinput2 == '2'){
 				GPIOC->ODR ^= (1<<6);	// toggle
 			}
 			else{
@@ -164,10 +164,10 @@ int main(void)
 			if(userinput2 == '0'){ // turn on
 				GPIOC->ODR |= (1<<7);
 			}
-			if(userinput2 == '1'){
+			else if(userinput2 == '1'){
 				GPIOC->ODR &=~ (1<<7); // turn off 
 			}
-			if(userinput2 == '2'){
+			else if(userinput2 == '2'){
 				GPIOC->ODR ^= (1<<7);	// toggle
 			}
 			else{
@@ -179,10 +179,10 @@ int main(void)
 			if(userinput2 == '0'){ // turn on
 				GPIOC->ODR |= (1<<8);
 			}
-			if(userinput2 == '1'){
+			else if(userinput2 == '1'){
 				GPIOC->ODR &=~ (1<<8); // turn off 
 			}
-			if(userinput2 == '2'){
+			else if(userinput2 == '2'){
 				GPIOC->ODR ^= (1<<8);	// toggle
 			}
 			else{
@@ -194,10 +194,10 @@ int main(void)
 			if(userinput2 == '0'){ // turn on
 				GPIOC->ODR |= (1<<9);
 			}
-			if(userinput2 == '1'){
+			else if(userinput2 == '1'){
 				GPIOC->ODR &=~ (1<<9); // turn off 
 			}
-			if(userinput2 == '2'){
+			else if(userinput2 == '2'){
 				GPIOC->ODR ^= (1<<9);	// toggle
 			}
 			else{
